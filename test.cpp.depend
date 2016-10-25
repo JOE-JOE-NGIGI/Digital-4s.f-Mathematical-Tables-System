@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1477402924 source:/home/joe--ngigi/Desktop/codeblock/test.cpp/main.cpp
+	<iostream>
+	<cmath>
+	<iomanip>
+	<sstream>
+
