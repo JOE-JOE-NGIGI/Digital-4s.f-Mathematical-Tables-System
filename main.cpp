@@ -11,13 +11,12 @@ The system requires that you set your terminal window to its maximum size both f
 #include <sstream>  //headerfile to enable manipulation of strings
 #include <stdlib.h>
 
-//Defining a constant value
+//Defining a constant value y which converts the angles from radians to degrees
 #define y 3.14159142/180
 
-int operation;
-float a,angle;
-//double d;
-//double c;
+int operation;//choice for the operation user intends to carry out
+float a,angle;//floating point variable declaration.a is the maximum angle to be input by user
+
 using namespace std;
 
 //Declaration of functions
@@ -43,7 +42,7 @@ void sines ()
      cout<<"Angle"<<setw(10)<<".000"<<setw(10)<<".001"<<setw(10)<<".002"<<setw(10)<<".003"<<setw(10)<<".004"<<setw(10)<<".005"<<
      setw(10)<<".006"<<setw(10)<<".007"<<setw(10)<<".008"<<setw(10)<<".009\n"<<endl;
 
-        for(angle=0.0;angle<=a;angle=angle+0.01)
+        for(angle=0.0;angle<=a;angle=angle+0.01)//for loop displays angles vertically
 
             {
                 cout<<setprecision(4)<<fixed<<angle<<setw(10)<<sin((angle)*y)<<setw(10)<<
